@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 id="hello"></h1>
+	<script type ="text/javascript" src="http://code.jquery.com/jquery.min.js">
+	function initPage(){
+		var h1 = document.getElementById("hello");
+		h1.style.color = "#0000ff";
+		h1.style.backgroundColor = "#d5d5d5";
+		h1.style.fontSize = "50px";
+		h1.style.padding = "15px";
+		h1.style.margin = "0";
+		h1.innerHTML = "Hello jQuery";
+	}
+
+	function sayHello(){
+		alert("안녕하세요. 제이쿼리");
+	}
+
+	jQuery(sayHello);
+	jQuery(initPage);
+
+	</script>
+</body>
+</html>
